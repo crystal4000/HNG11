@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tania's Tech Journey</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <!-- <nav id="nav">
+        <p data-testid="currentDay"></p>
+        <p data-testid="currentTimeUTC"></p>
+      </nav> -->
+      <header id="header">
+        <div class="intro-text">
+          <h1 class="pink-text">Welcome to Tania's Tech Journey</h1>
+          <p>Join me as I explore the world of frontend development!</p>
+        </div>
+      </header>
+
+      <section id="about">
+        <div class="row">
+          <div
+            class="col-6 profile-img"
+            data-testid="slackProfilePicture"
+          ></div>
+          <div class="col-6 profile">
+            <div class="profile-details">
+              <p>
+                Hi there👋! My name is
+                <strong
+                  data-testid="slackDisplayName"
+                  class="pink-text"
+                ></strong
+                >, and I am passionate about creating responsive and
+                user-friendly web applications using modern front-end
+                technologies such as HTML5, CSS3, and JavaScript.
+              </p>
+              <p>
+                Currently, I am pursuing a Master's degree in Software and
+                Security Engineering, while honing my skills in frameworks like
+                ReactJS and exploring the latest trends in front-end development
+                to stay ahead in this rapidly evolving field.
+              </p>
+              <p>
+                You can reach out to me at
+                <strong data-testid="slackEmail" class="pink-text">
+                  <a href="mailto:amandawork2022@gmail.com"></a
+                ></strong>
+                for collaborations or inquiries. Also, check out my work on
+                GitHub and connect with me on:
+                <strong
+                  ><a href="https://github.com/your-github">GitHub</a></strong
+                >,
+                <strong>
+                  <a href="https://www.linkedin.com/in/your-linkedin"
+                    >LinkedIn</a
+                  ></strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <h2 class="pink-text">My Goals and Timelines</h2>
+        <div id="timeline-container">
+          <!-- Timeline events will be dynamically added here -->
+        </div>
+      </section>
+
+      <footer id="footer">
+        <p>&copy; 2023 Tania's Tech Journey. All rights reserved.</p>
+        <p>
+          Useful Links:
+          <a data-testid="hngLink" target="_blank"></a> |
+          <a data-testid="keywordLink" target="_blank"></a>
+          |
+          <a data-testid="scrapeanywebLink" target="_blank"></a>
+        </p>
+        <p>
+          <span data-testid="currentDay"></span>,
+          <span data-testid="currentTimeUTC"></span>
+        </p>
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
