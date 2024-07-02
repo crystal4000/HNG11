@@ -92,18 +92,6 @@ li {
   color: rgba(0, 0, 0, 0.8);
 }
 
-#nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1rem 1rem;
-  background: #fff;
-}
-
-#nav p {
-  margin: 0 1rem;
-}
-
 #header {
   position: relative;
   width: 100%;
@@ -172,13 +160,34 @@ li {
   height: 100%;
 }
 
-#about .profile-img {
+/* #about .profile-img {
   background: url("https://ca.slack-edge.com/T07466B189M-U07A8HEHNP7-02cab628966e-512");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   animation: slideInLeft 1s 1.5s forwards;
   opacity: 0;
+} */
+
+.box {
+  width: 400px;
+  height: 400px;
+}
+
+.image {
+  width: 100%;
+}
+
+#about .profile-img {
+  width: 550px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  animation: slideInRight 1s 1s forwards;
+  opacity: 0;
+  margin: 0 auto;
 }
 
 #about .profile {
