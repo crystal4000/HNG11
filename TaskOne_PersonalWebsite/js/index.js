@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
   slackNameElement.textContent = "Tania";
   slackEmailElement.textContent = "amandawork2022@gmail.com";
   currentDayOfWeekElement.textContent = currentDayOfWeek;
-  currentUTCTimeElement.textContent = Date.now();
+  currentUTCTimeElement.textContent = new Date()
+    .toISOString()
+    .split("T")[1]
+    .split("Z")[0];
 
   hngLinkElement.href = "https://hng.tech/learn";
   keywordLinkElement.href = "https://keyword.dog";
